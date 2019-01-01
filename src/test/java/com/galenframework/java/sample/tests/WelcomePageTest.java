@@ -9,16 +9,9 @@ import java.io.IOException;
 public class WelcomePageTest extends GalenTestBase {
 
     @Test(dataProvider = "devices")
-    public void welcomePage_shouldLookGood_onDevice(TestDevice device) throws IOException {
+    public void welcomePage(TestDevice device) throws IOException {
         load("/");
-        checkLayout("/specs/welcomePage.spec", device.getTags());
-    }
-
-    @Test(dataProvider = "devices")
-    public void loginPage_shouldLookGood_onDevice(TestDevice device) throws IOException {
-        load("/");
-        getDriver().findElement(By.xpath("//button[.='Login']")).click();
-        checkLayout("/specs/loginPage.spec", device.getTags());
+        checkLayout("/specs/welcomePageNew.spec", device.getTags());
     }
 
 }

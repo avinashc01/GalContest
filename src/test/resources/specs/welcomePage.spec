@@ -1,4 +1,4 @@
-@import common.spec
+@import commonNew.spec
 
 @objects
     welcome-block       css     .jumbotron
@@ -34,20 +34,3 @@
 
         login-button:
             width ~ 78px
-
-
-    @on tablet
-        greeting:
-            height ~ 39px
-            inside welcome-block ~ 50 px top
-
-        login-button:
-            width ~ 78px
-
-    @on mobile
-        greeting:
-            height ~ 78px
-            inside welcome-block ~ 50 px top
-
-        login-button:
-            inside welcome-block ~ 30px left right

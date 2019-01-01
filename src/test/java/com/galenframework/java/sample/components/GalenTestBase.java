@@ -13,7 +13,7 @@ import static java.util.Arrays.asList;
 
 public abstract class GalenTestBase extends GalenTestNgTestBase {
 
-    private static final String ENV_URL = "http://testapp.galenframework.com";
+    private static final String ENV_URL = "https://www.iciciprulife.com";
 
     @Override
     public WebDriver createDriver(Object[] args) {
@@ -37,9 +37,8 @@ public abstract class GalenTestBase extends GalenTestNgTestBase {
     @DataProvider(name = "devices")
     public Object [][] devices () {
         return new Object[][] {
-                {new TestDevice("mobile", new Dimension(450, 800), asList("mobile"))},
-                //{new TestDevice("tablet", new Dimension(750, 800), asList("tablet"))},
-                //{new TestDevice("desktop", new Dimension(1024, 800), asList("desktop"))}
+                //{new TestDevice("mobile", new Dimension(450, 800), asList("mobile"))},
+                {new TestDevice("desktop", new Dimension(1024, 900), asList("desktop"))}
         };
     }
 

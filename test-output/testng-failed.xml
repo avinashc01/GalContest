@@ -7,10 +7,9 @@
         <methods>
           <include name="initDriver"/>
           <include name="initReport"/>
-          <include name="loginPage_shouldLookGood_onDevice" invocation-numbers="0"/>
           <include name="provideTestEndDate"/>
           <include name="quitDriver"/>
-          <include name="welcomePage_shouldLookGood_onDevice" invocation-numbers="0"/>
+          <include name="welcomePage" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.galenframework.java.sample.tests.WelcomePageTest -->
     </classes>
