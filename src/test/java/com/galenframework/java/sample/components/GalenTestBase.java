@@ -37,7 +37,7 @@ public abstract class GalenTestBase extends GalenTestNgTestBase {
     @DataProvider(name = "devices")
     public Object [][] devices () {
         return new Object[][] {
-                //{new TestDevice("mobile", new Dimension(450, 800), asList("mobile"))},
+                {new TestDevice("mobile", new Dimension(450, 800), asList("mobile"))},
                 {new TestDevice("desktop", new Dimension(1024, 900), asList("desktop"))}
         };
     }
