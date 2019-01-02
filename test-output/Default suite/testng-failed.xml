@@ -9,7 +9,7 @@
           <include name="initReport"/>
           <include name="provideTestEndDate"/>
           <include name="quitDriver"/>
-          <include name="welcomePage" invocation-numbers="0"/>
+          <include name="welcomePage" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.galenframework.java.sample.tests.WelcomePageTest -->
     </classes>
